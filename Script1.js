@@ -4,6 +4,8 @@
       const loadingScreen = document.getElementById('loading-screen');
       const logoAnimation = document.getElementById('logo-animation');
       const mainContent = document.getElementById('main-content');
+      const timerElement = document.getElementById('timer');
+      let countdown = 8;
 
       // Function to hide the loading screen and show the main content
       function showMainContent() {
@@ -11,19 +13,17 @@
         mainContent.style.display = 'block';
       }
 
-      // Check if the browser is Google Chrome
-      const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-      if (isChrome) {
-        // Redirect to index.html immediately for Chrome users
-        window.location.href = 'index.html';
-      } else {
-        // For other browsers, play the video and show the main content after 8 seconds
-        logoAnimation.autoplay = true;
-        logoAnimation.load();
-        logoAnimation.addEventListener('ended', showMainContent);
-        //setTimeout(showMainContent, 8000);
+      // Function to update the countdown timer
+      function updateTimer() {
+        timerElement.textContent = `Page will load in ${countdown} seconds...`;
+        countdown--;
+
+        if (countdown >= 0) {
+          setTimeout(updateTimer, 1000); // Update timer every second
+        } else {
+          showMainContent();
+        }
       }
-    });
 
       // Add an event listener to check if the logo animation ends
       logoAnimation.addEventListener('ended', showMainContent);

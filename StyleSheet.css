@@ -144,7 +144,7 @@ nav {
     padding: 15px;
 }
 
-.line {
+.line2 {
     width: 100%;
     height: 6px;
     background-color: #333;
@@ -169,7 +169,7 @@ nav {
 
     .dropdown-content a {
         color: black;
-        padding: 12px 16px;
+        padding: 16px 22px;
         text-decoration: none;
         display: block;
     }

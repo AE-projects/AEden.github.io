@@ -4,6 +4,8 @@
       const loadingScreen = document.getElementById('loading-screen');
       const logoAnimation = document.getElementById('logo-animation');
       const mainContent = document.getElementById('main-content');
+      const timerElement = document.getElementById('timer');
+      let countdown = 8;
 
       // Function to hide the loading screen and show the main content
       function showMainContent() {
@@ -11,9 +13,16 @@
         mainContent.style.display = 'block';
       }
 
-      // Function to hide the video tag warning after 8 seconds
-      function hideVideoWarning() {
-        videoWarning.style.display = 'none';
+      // Function to update the countdown timer
+      function updateTimer() {
+        timerElement.textContent = `Page will load in ${countdown} seconds...`;
+        countdown--;
+
+        if (countdown >= 0) {
+          setTimeout(updateTimer, 1000); // Update timer every second
+        } else {
+          showMainContent();
+        }
       }
 
       // Add an event listener to check if the logo animation ends
@@ -22,9 +31,8 @@
       // Add a timed delay of 8 seconds in case the logo animation does not trigger the automatic switch
       setTimeout(showMainContent, 8000);
 
-      // Hide the video tag warning after 8 seconds
-      const videoWarning = document.querySelector('video::after');
-      setTimeout(hideVideoWarning, 8000);
+      // Start the countdown timer
+      updateTimer();
     });
 
 //---------------------------------------------------------------------------------------------------//

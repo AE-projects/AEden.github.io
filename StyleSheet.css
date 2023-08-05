@@ -500,10 +500,9 @@ li {
 
     .col20 {
         text-align: left !important;
-        /*list-style-type: none;
-        flex: 0 0 50%;
-        max-width: 50%;*/
         float: left;
+        overflow:hidden;
+        width:100%;
     }
 
     /*--------------------------------lists------------------------------------------------------*/

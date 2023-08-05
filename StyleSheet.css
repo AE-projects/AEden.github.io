@@ -41,6 +41,11 @@ video {
       padding: 10px;
       background-color: white;
     }
+    #timer {
+      color: white;
+      font-size: 18px;
+      margin-top: 10px;
+    }
 
 .cookies {
     color: #4070f4;

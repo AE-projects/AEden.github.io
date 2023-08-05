@@ -343,6 +343,7 @@ ul {
     margin-top: 0;
     margin-bottom: 1rem;
     list-style-type: none;
+    margin-left: 10px;
 }
 
     ul ul {
@@ -503,6 +504,7 @@ li {
         float: left;
         overflow:hidden;
         width:100%;
+        margin-left:25px;
     }
 
     /*--------------------------------lists------------------------------------------------------*/

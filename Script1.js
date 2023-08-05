@@ -1,5 +1,5 @@
 // JavaScript source code
-
+    // JavaScript code to handle loading and showing content
     window.addEventListener('load', function () {
       const loadingScreen = document.getElementById('loading-screen');
       const logoAnimation = document.getElementById('logo-animation');
@@ -11,14 +11,23 @@
         mainContent.style.display = 'block';
       }
 
+      // Function to hide the video tag warning after 8 seconds
+      function hideVideoWarning() {
+        videoWarning.style.display = 'none';
+      }
+
       // Add an event listener to check if the logo animation ends
       logoAnimation.addEventListener('ended', showMainContent);
 
       // Add a timed delay of 8 seconds in case the logo animation does not trigger the automatic switch
       setTimeout(showMainContent, 8000);
+
+      // Hide the video tag warning after 8 seconds
+      const videoWarning = document.querySelector('video::after');
+      setTimeout(hideVideoWarning, 8000);
     });
 
-
+//---------------------------------------------------------------------------------------------------//
 
 const cookieBox = document.querySelector(".cookie-popup"),
     buttons = document.querySelectorAll("button");

@@ -590,10 +590,17 @@ figure {
     }
     .row4, .row4_contents {
         flex-wrap: wrap;
-        text-align: center
+        text-align: center;
+        margin-top: 0;
+    }
+    .text-large {
+        margin-top: 0;
     }
     .selfie {
         padding: 20px;
+    }
+    .img-container {
+        height: 600px;
     }
 }
 

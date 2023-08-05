@@ -573,6 +573,10 @@ figure {
     width: 600px;
 }
 
+.selfie {
+    padding: 40px;
+}
+
 @media screen and (max-width: 600px) {
     .image {
         width: 100%;
@@ -584,9 +588,14 @@ figure {
     .box1, .box2 {
         gap: 0;
     }
+    .row4, .row4_contents {
+        flex-wrap: wrap;
+        text-align: center
+    }
+    .selfie {
+        padding: 20px;
+    }
 }
-
-    
 
     .container1 {
         display: flex;

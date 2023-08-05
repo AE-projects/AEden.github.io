@@ -1,16 +1,24 @@
 // JavaScript source code
 
-window.addEventListener('load', function () {
-    const loadingScreen = document.getElementById('loading-screen');
-    const logoAnimation = document.getElementById('logo-animation');
-    const mainContent = document.getElementById('main-content');
+    window.addEventListener('load', function () {
+      const loadingScreen = document.getElementById('loading-screen');
+      const logoAnimation = document.getElementById('logo-animation');
+      const mainContent = document.getElementById('main-content');
 
-    // Add an event listener to hide the loading screen and show the main content once the logo animation ends
-    logoAnimation.addEventListener('ended', function () {
+      // Function to hide the loading screen and show the main content
+      function showMainContent() {
         loadingScreen.style.display = 'none';
         mainContent.style.display = 'block';
+      }
+
+      // Add an event listener to check if the logo animation ends
+      logoAnimation.addEventListener('ended', showMainContent);
+
+      // Add a timed delay of 8 seconds in case the logo animation does not trigger the automatic switch
+      setTimeout(showMainContent, 8000);
     });
-});
+
+
 
 const cookieBox = document.querySelector(".cookie-popup"),
     buttons = document.querySelectorAll("button");

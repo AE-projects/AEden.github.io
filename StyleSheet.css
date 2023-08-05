@@ -572,7 +572,7 @@ figure {
 
 .selfie {
     padding: 40px;
-    border-radius: 100px;
+    border-radius: 100%;
 }
 
 @media screen and (max-width: 600px) {

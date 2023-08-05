@@ -56,3 +56,9 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+
+function toggleDropdown() {
+    const dropdownContent = document.querySelector(".dropdown-content");
+    dropdownContent.classList.toggle("show");
+}

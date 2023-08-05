@@ -17,15 +17,36 @@
 <body>
     <header>
         <!--Logo in nav bar with link to Home page-->
-        <a href="index.html"><img src="img/AEden2.png" alt="Logo" class="logo"></a>
+        <a href="#.html"><img src="img/AEden2.png" alt="Logo" class="logo"></a>
         <!--<button class="menu-btn" onclick="toggleMenu()">&#9776;</button>-->
         <!--Nav bar list with connecting links to each page-->
-        <nav>
-            <a href="ComingSoon.html">News</a>
-            <a href="ComingSoon.html">About</a>
-            <a href="ComingSoon.html">Contact</a>
-            <a href="ComingSoon.html">Log in</a>
-        </nav>
+        <!-- For mobile screens -->
+        <div class="mobile-nav">
+            <button class="menu-btn" onclick="toggleDropdown()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <div class="dropdown-content">
+                <a href="ComingSoon.html">News</a>
+                <a href="ComingSoon.html">About</a>
+                <a href="ComingSoon.html">Contact</a>
+                <a href="ComingSoon.html">Log in</a>
+            </div>
+        </div>
+
+        <!-- For computer screens -->
+        <div class="desktop-nav">
+            <nav>
+                <a href="ComingSoon.html">News</a>
+                <a href="ComingSoon.html">About</a>
+                <a href="ComingSoon.html">Contact</a>
+                <a href="ComingSoon.html">Log in</a>
+            </nav>
+        </div>
+
+
+
     </header>
     <!--Cookie popup tab-->
     <!--<div class=" wrapper">
@@ -47,7 +68,7 @@
     <div class="img-container">
         <!-- Each image is 1500px width -->
         <div class="photobanner">
-            <img class="first" src="img/8.jpg" alt="" width="1500" />
+            <img class="first" src="img/8.JPG" alt="" width="1500" />
             <img src="img/2.JPG" alt="" width="1500" />
             <img src="img/3.JPG" alt="" width="1500" />
             <img src="img/8.JPG" alt="" width="1500" />
@@ -58,7 +79,7 @@
     </div>
     <!--CEO contents-->
     <section class="row4">
-            <img src="img/selfie.jpg" alt="face" width="160" height="160" style="padding:40px">
+            <img src="img/selfie.JPG" alt="face" width="160" height="160" style="padding:40px">
             <div class="row4_contents">
                 <p class="text-large">“Dreams can become reality with the right graphics processing unit”</p>
                 <p>- CEO & Founder</p>
@@ -75,7 +96,7 @@
                 <p><a href="#"><strong>View Project</strong></a></p>
             </div>
             <figure>
-                <img src="img/3.JPG" alt="greeks battling with romans" style="border-width:10px; border-radius:20px;" width="600" height="" />
+                <img src="img/3.JPG" alt="greeks battling with romans" style="border-width:10px; border-radius:20px;" class="image" />
             </figure>
         </div>
 
@@ -87,7 +108,7 @@
                 <p><a href="#"><strong>View Project</strong></a></p>
             </div>
             <figure>
-                <img src="img/8.JPG" alt="greeks battling with romans" style="border-width:10px; border-radius:20px;" width="600" height="" />
+                <img src="img/8.JPG" alt="greeks battling with romans" style="border-width:10px; border-radius:20px;" class="image" />
             </figure>
         </div>
         <div class="box1 reveal fade-left">
@@ -98,38 +119,16 @@
                 <p><a href="#"><strong>View Project</strong></a></p>
             </div>
             <figure>
-                <img src="img/2.JPG" alt="greeks battling with romans" style="border-width:10px; border-radius:20px;" width="600" />
+                <img src="img/2.JPG" alt="greeks battling with romans" style="border-width:10px; border-radius:20px;" class="image" />
             </figure>
         </div>
     </section>
-
-    <!-- Scroilling window with different game dev processes -->
-        <section class="container1">
-            <div class="section1">
-                <img src="img/computer1.jpg" width="300" style="border-radius:20px;" />
-                <h3>Title1</h3>
-                <p>Enter text here...</p>
-            </div>
-            <div class="section1">
-                <img src="img/motherboard1.jpg" width="300" style="border-radius:20px;" />
-                <h3>Title2</h3>
-                <p>Enter text here...</p>
-            </div>
-            <div class="section1">
-                <img src="img/coding1.jpg" width="300" style="border-radius:20px;" />
-                <h3>Title3</h3>
-                <p>Enter text here...</p>
-            </div>
-        </section>
-
-
-    <!--Footer-->
 
     <footer class="FT" width="100%">
         <div class="container" width="100%">
             <div class="row1" width="100%">
                 <div class="col1">
-                    <a href="index.html"><img src="img/AEden2.png" alt="Logo" class="logoSM"></a>
+                    <a href="Home.html"><img src="img/AEden2.png" alt="Logo" class="logoSM"></a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit officiis corporis optio natus.</p>
                 </div>
                 <div class="col2">

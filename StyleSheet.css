@@ -593,6 +593,9 @@ figure {
     .selfie {
         padding: 20px;
     }
+    .img-container {
+        height: 600px;
+    }
 }
 
     .container1 {

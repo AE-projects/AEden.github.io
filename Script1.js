@@ -21,7 +21,7 @@
         logoAnimation.autoplay = true;
         logoAnimation.load();
         logoAnimation.addEventListener('ended', showMainContent);
-        setTimeout(showMainContent, 8000);
+        //setTimeout(showMainContent, 8000);
       }
     });
 

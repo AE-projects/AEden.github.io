@@ -33,6 +33,15 @@ video {
     max-height: 100%;
 }
 
+    video::after {
+      content: 'Your browser does not support the video tag.';
+      color: blue;
+      display: block;
+      text-align: center;
+      padding: 10px;
+      background-color: white;
+    }
+
 .cookies {
     color: #4070f4;
     font-size: 30px;

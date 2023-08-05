@@ -190,9 +190,11 @@ nav {
     .desktop-nav {
         display: none;
     }
-
     .mobile-nav {
         display: block;
+    }
+    .img-container {
+        height: 600px;
     }
 }
 
@@ -592,9 +594,6 @@ figure {
     }
     .selfie {
         padding: 20px;
-    }
-    .img-container {
-        height: 600px;
     }
 }
 

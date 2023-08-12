@@ -338,12 +338,9 @@ top-img {
     }*/
 
 footer {
-    /*height:300px;*/
     width: 100%;
-    background-color: #333;   
-    padding: 15px 20px 35px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.9));
     margin-bottom:0;
-    padding-bottom:0;
 }
 a {
     -webkit-transition: .3s all ease;
@@ -393,10 +390,8 @@ ul {
     }
 
 .FT {
-    padding: 50px 0 1px 0;
-    background: grey;
+    padding: 10px 0 0px 0;
     color: white;
-    position:page;
     overflow: hidden;
 }
 
@@ -547,8 +542,8 @@ li {
     /*--------------------------------lists------------------------------------------------------*/
 .col12-contents {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
     
 }

@@ -115,12 +115,12 @@ header h2 {
     max-height:50px;
     margin: 20px 50px 20px 20px;
 }
-.logo2 {
+/*.logo2 {
     float: left;
     max-width: 277px;
     max-height: 84px;
     width: 100%;
-}
+}*/
 /* Style for the menu button */
 .menu-btn {
     display: none;

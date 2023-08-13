@@ -112,11 +112,15 @@ header h2 {
 .logo {
     float: left;
     width: auto;
-    height: 40%;
     max-height:50px;
     margin: 20px 50px 20px 20px;
 }
-
+.logo2 {
+    float: left;
+    width: auto;
+    max-height:70px;
+    margin: 20px 50px 20px 20px;
+}
 /* Style for the menu button */
 .menu-btn {
     display: none;

@@ -518,11 +518,8 @@ li {
     }
 
     .col12 {
-        text-align: right !important;
-        list-style-type: none;
         flex: 0 0 50%;
         max-width: 50%;
-        float: left;
     }
 
     .col20 {
@@ -536,9 +533,8 @@ li {
     /*--------------------------------lists------------------------------------------------------*/
 .col12-contents {
     display: flex;
-    justify-content: space-around;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-evenly;
     
 }
 .social-icon {

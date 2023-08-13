@@ -117,8 +117,9 @@ header h2 {
 }
 .logo2 {
     float: left;
-    width: auto;
-    max-height:84px;
+    max-width: 277px;
+    max-height: 84px;
+    width: 100%;
 }
 /* Style for the menu button */
 .menu-btn {

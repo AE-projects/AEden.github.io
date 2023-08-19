@@ -13,17 +13,17 @@
 //        mainContent.style.display = 'block';
 //    }
 
-    // Function to update the countdown timer
-    //function updateTimer() {
-    //    timerElement.textContent = `Page will load in ${countdown} seconds...`;
-    //    countdown--;
+// Function to update the countdown timer
+//function updateTimer() {
+//    timerElement.textContent = `Page will load in ${countdown} seconds...`;
+//    countdown--;
 
-    //    if (countdown >= 0) {
-    //        setTimeout(updateTimer, 1000); // Update timer every second
-    //    } else {
-    //        showMainContent();
-    //    }
-    //}
+//    if (countdown >= 0) {
+//        setTimeout(updateTimer, 1000); // Update timer every second
+//    } else {
+//        showMainContent();
+//    }
+//}
 
 //    // Add an event listener to check if the logo animation ends
 //    logoAnimation.addEventListener('ended', showMainContent);

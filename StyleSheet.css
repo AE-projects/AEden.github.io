@@ -1,11 +1,13 @@
 ﻿body {
     margin: 0; /*removes default border around each page*/
+    padding: 0;
     min-height: 100vh;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
     font-family: 'Open Sans', sans-serif;
+    top: 0;
 }
 /*--------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------*/
@@ -173,7 +175,7 @@ nav {
 /* Styles for the navigation bar on mobile screens */
 .mobile-nav {
     display: none;
-    position:relative;
+    position: relative;
 }
 
 .menu-btn {
@@ -187,7 +189,7 @@ nav {
     width: 70px;
     height: 60px;
     padding: 15px;
-    z-index:1;
+    z-index: 1;
 }
 
 .line2 {
@@ -604,6 +606,7 @@ figure {
         margin-left: 10px;
         margin-right: 10px;
     }
+
     .row4, .row4_contents {
         flex-wrap: wrap;
         text-align: center;
@@ -782,12 +785,13 @@ figure {
     overflow: hidden;
     position: relative;
     z-index: 0;
-/*    width: 100%;*/
+    /*    width: 100%;*/
 }
+
 @media screen and (max-width: 600px) {
     .img1, .img2, .img3, .img4, .img5 {
         /*width: 100%;*/
-        height:50%;
+        height: 50%;
     }
 }
 
@@ -801,10 +805,11 @@ figure {
     align-items: center;
     justify-content: center;
 }
+
 .overlay {
     position: absolute;
     top: 0;
-   /* width: 50%;*/ /* Adjust the width of the text overlay */
+    /* width: 50%;*/ /* Adjust the width of the text overlay */
     height: 100%;
     background-color: rgba(255, 255, 255, 0.5); /* 80% opacity white background */
     display: flex;
@@ -812,6 +817,7 @@ figure {
     justify-content: flex-start;
     padding: 20px; /* Add padding to the text */
 }
+
 .text {
     color: black; /* Adjust text color */
 }

@@ -790,22 +790,6 @@ figure {
         height:50%;
     }
 }
-.img1 {
-    background-image: url("img/10.JPG");
-    height:100vh;
-}
-
-.tb-main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #97979797;
-    height: 300px;
-    width: 500px;
-    text-align: center;
-    border-radius: 10%;
-}
 
 .section {
     position: relative;

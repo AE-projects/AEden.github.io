@@ -561,25 +561,7 @@ li {
 .social-icon {
     width: 32px;
 }
-
-
 /*--------------------------------------------------------------------------------------*/
-
-
-
-
-.box2 {
-    margin-block-start: 2.5rem;
-    display: flex;
-    justify-content: flex-start;
-    gap: 80px;
-    flex-wrap: nowrap;
-    width: 100%;
-    align-items: center;
-    flex-direction: row-reverse;
-    max-width: 1383px;
-}
-
 figure {
     display: block;
     margin-block-start: 1em;
@@ -601,48 +583,24 @@ figure {
     .image {
         width: 100%;
     }
-
     figure {
         margin-left: 10px;
         margin-right: 10px;
     }
-
     .row4, .row4_contents {
         flex-wrap: wrap;
         text-align: center;
         margin-top: 0px;
     }
-
     .text-large {
         margin-top: 0px;
     }
-
     .selfie {
         padding: 20px;
     }
-
     .img-container {
         height: 600px;
     }
-}
-
-.container1 {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    padding-top: 60px;
-    padding-bottom: 40px;
-    width: 100%;
-}
-
-.section1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .reveal {
@@ -683,115 +641,6 @@ figure {
     100% {
         transform: translateX(0);
         opacity: 1;
-    }
-}
-/*------------------------GALLERY ANIMATION---------------------------*/
-.img-container {
-    width: 100%;
-    overflow: hidden;
-    border: none;
-    padding: 0;
-}
-
-.photobanner {
-    height: 233px;
-    width: 9000px;
-    display: table;
-}
-
-    .photobanner img {
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-
-        .photobanner img:hover {
-            -webkit-transform: scale(0.9);
-            -moz-transform: scale(0.9);
-            -o-transform: scale(0.9);
-            -ms-transform: scale(0.9);
-            transform: scale(0.9);
-            cursor: pointer;
-            -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
-            -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
-            box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
-        }
-
-.first {
-    -webkit-animation: bannermove 110s linear infinite;
-    -moz-animation: bannermove 110s linear infinite;
-    -ms-animation: bannermove 110s linear infinite;
-    -o-animation: bannermove 110s linear infinite;
-    animation: bannermove 110s linear infinite;
-}
-
-@keyframes bannermove {
-    0% {
-        margin-left: 0px;
-    }
-
-    100% {
-        margin-left: -6000px;
-    }
-}
-
-@-moz-keyframes bannermove {
-    0% {
-        margin-left: 0px;
-    }
-
-    100% {
-        margin-left: -6000px;
-    }
-}
-
-@-webkit-keyframes bannermove {
-    0% {
-        margin-left: 0px;
-    }
-
-    100% {
-        margin-left: -6000px;
-    }
-}
-
-@-ms-keyframes bannermove {
-    0% {
-        margin-left: 0px;
-    }
-
-    100% {
-        margin-left: -6000px;
-    }
-}
-
-@-o-keyframes bannermove {
-    0% {
-        margin-left: 0px;
-    }
-
-    100% {
-        margin-left: -6000px;
-    }
-}
-
-.img1, .img2, .img3, .img4, .img5 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
-    z-index: 0;
-    /*    width: 100%;*/
-}
-
-@media screen and (max-width: 600px) {
-    .img1, .img2, .img3, .img4, .img5 {
-        /*width: 100%;*/
-        height: 50%;
     }
 }
 

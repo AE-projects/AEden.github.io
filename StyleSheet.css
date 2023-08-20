@@ -804,6 +804,12 @@ figure {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
 }
 
 .overlay {

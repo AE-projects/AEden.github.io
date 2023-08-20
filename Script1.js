@@ -1,39 +1,39 @@
 // JavaScript source code
 // JavaScript code to handle loading and showing content
-//window.addEventListener('load', function () {
-//    const loadingScreen = document.getElementById('loading-screen');
-//    const logoAnimation = document.getElementById('logo-animation');
-//    const mainContent = document.getElementById('main-content');
-//    const timerElement = document.getElementById('timer');
-//    let countdown = 8;
+window.addEventListener('load', function () {
+    const loadingScreen = document.getElementById('loading-screen');
+    const logoAnimation = document.getElementById('logo-animation');
+    const mainContent = document.getElementById('main-content');
+    const timerElement = document.getElementById('timer');
+    let countdown = 8;
 
-//    // Function to hide the loading screen and show the main content
-//    function showMainContent() {
-//        loadingScreen.style.display = 'none';
-//        mainContent.style.display = 'block';
-//    }
+    // Function to hide the loading screen and show the main content
+    function showMainContent() {
+        loadingScreen.style.display = 'none';
+        mainContent.style.display = 'block';
+    }
 
-// Function to update the countdown timer
-//function updateTimer() {
-//    timerElement.textContent = `Page will load in ${countdown} seconds...`;
-//    countdown--;
+ //Function to update the countdown timer
+function updateTimer() {
+    timerElement.textContent = `Page will load in ${countdown} seconds...`;
+    countdown--;
 
-//    if (countdown >= 0) {
-//        setTimeout(updateTimer, 1000); // Update timer every second
-//    } else {
-//        showMainContent();
-//    }
-//}
+    if (countdown >= 0) {
+        setTimeout(updateTimer, 1000); // Update timer every second
+    } else {
+        showMainContent();
+    }
+}
 
-//    // Add an event listener to check if the logo animation ends
-//    logoAnimation.addEventListener('ended', showMainContent);
+    // Add an event listener to check if the logo animation ends
+    logoAnimation.addEventListener('ended', showMainContent);
 
-//    // Add a timed delay of 8 seconds in case the logo animation does not trigger the automatic switch
-//    setTimeout(showMainContent, 8000);
+    // Add a timed delay of 8 seconds in case the logo animation does not trigger the automatic switch
+    setTimeout(showMainContent, 8000);
 
-//    // Start the countdown timer
-//    updateTimer();
-//});
+    // Start the countdown timer
+    updateTimer();
+});
 
 //---------------------------------------------------------------------------------------------------//
 

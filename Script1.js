@@ -100,3 +100,26 @@ function toggleDropdown() {
     const dropdownContent = document.querySelector(".dropdown-content");
     dropdownContent.classList.toggle("show");
 }
+
+
+// JavaScript to lazy load background images
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".section");
+    const options = {
+        threshold: 0 // Adjust this threshold as needed
+    };
+
+    const observer = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const bgImage = entry.target.getAttribute("data-bg-image");
+                entry.target.style.backgroundImage = `url('${bgImage}')`;
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});

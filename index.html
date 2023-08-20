@@ -16,15 +16,16 @@
     <!--Name of this page-->
     <title>Aeden Home</title>
 </head>
-
-
 <body>
+    <div id="loading-screen">
+    <video id="logo-animation" autoplay muted playsinline>
+            <source src="img/AEden_anim2.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="main-content" style="display: none;">
     <section class="section" style="background-image: url('img/2.JPG');">
         <header>
-            <!--Logo in nav bar with link to Home page-->
             <a href="index.html"><img src="img/AEden2.png" alt="Logo" class="logo" style=" margin: 20px 50px 20px 20px;"></a>
-
-            <!-- For mobile screens -->
             <div class="mobile-nav">
                 <button class="menu-btn" onclick="toggleDropdown()">
                     <span class="line2"></span>
@@ -37,8 +38,6 @@
                     <a href="ComingSoon.html">Contact</a>
                 </div>
             </div>
-
-            <!-- For computer screens -->
             <div class="desktop-nav">
                 <nav>
                     <a href="ComingSoon.html">News</a>
@@ -47,7 +46,6 @@
                 </nav>
             </div>
         </header>
-
         <div class="overlay" style="top: 50%; left: 50%; transform: translate(-50%, -50%); height: auto; justify-content: flex-start; ">
             <div class="text" style="text-align:center;">
                 <h1>Augmented Paradise</h1>
@@ -55,7 +53,6 @@
             </div>
         </div>
     </section>
-
     <section class="row4">
         <img src="img/AB-selfie.jpg" alt="face" width="160" height="160" class="selfie">
         <div class="row4_contents">
@@ -63,92 +60,81 @@
             <p>- Albert Einstein</p>
         </div>
     </section>
-
     <section class="section" style="background-image: url('img/10.JPG');">
-            <div class="overlay" style=" right: 0; width:50%;">
-                <div class="text reveal fade-right">
-                    <p>2023</p>
-                    <h2><bold>Project Alpha</bold></h2>
-                    <p>"Experience tranquility like never before with U.topia. Immerse yourself in soothing melodies while exploring breathtaking landscapes through an interactive still camera. Discover serenity, reduce stress, and find your peaceful escape. Your journey to relaxation starts here."</p>
-                    <p><a href="ComingSoon.html"><strong>View Project</strong></a></p>
-                </div>
+        <div class="overlay" style=" right: 0; width:50%;">
+            <div class="text reveal fade-right">
+                <p>2023</p>
+                <h2><bold>Project Alpha</bold></h2>
+                <p>"Experience tranquility like never before with U.topia. Immerse yourself in soothing melodies while exploring breathtaking landscapes through an interactive still camera. Discover serenity, reduce stress, and find your peaceful escape. Your journey to relaxation starts here."</p>
+                <p><a href="ComingSoon.html"><strong>View Project</strong></a></p>
             </div>
-        </section>
-
-        <section class="section" style=" background: url('img/11.JPG') no-repeat center center fixed;">
-            <div class="overlay" style=" left: 0; width: 50%;">
-                <div class="text reveal fade-left">
-                    <p>2024</p>
-                    <h2><bold>Project Beta</bold></h2>
-                    <p>"March back in time to the Roman Empire's heart. Forge your destiny in a town devoted to the deity of war. Conquer battles, unravel political intrigues, and invoke the spirit of Ares as you rise from a mere citizen to a legendary warrior. Unleash your inner conqueror."</p>
-                    <p><a href="ComingSoon.html"><strong>View Project</strong></a></p>
-                </div>
+        </div>
+    </section>
+    <section class="section" style=" background-image: url('img/11.JPG');">
+        <div class="overlay" style=" left: 0; width: 50%;">
+            <div class="text reveal fade-left">
+                <p>2024</p>
+                <h2><bold>Project Beta</bold></h2>
+                <p>"March back in time to the Roman Empire's heart. Forge your destiny in a town devoted to the deity of war. Conquer battles, unravel political intrigues, and invoke the spirit of Ares as you rise from a mere citizen to a legendary warrior. Unleash your inner conqueror."</p>
+                <p><a href="ComingSoon.html"><strong>View Project</strong></a></p>
             </div>
-        </section>
-        <section class="section" style=" background: url('img/12.JPG') no-repeat center center fixed;">
-            <div class="overlay" style=" right: 0; width: 50%;">
-                <div class="text reveal fade-right">
-                    <p>2025</p>
-                    <h2><bold>Project Delta</bold></h2>
-                    <p>"Embark on a legendary quest in 'Arthur's Resurgence.' Set in the age of King Arthur, wield Excalibur and rally knights to reclaim a fractured kingdom from darkness. Uncover secrets of the Round Table, forge alliances, and lead epic battles. Honor, glory, and destiny await in this immersive medieval adventure."</p>
-                    <p><a href="ComingSoon.html"><strong>View Project</strong></a></p>
-                </div>
+        </div>
+    </section>
+    <section class="section" style=" background-image: url('img/12.JPG');">
+        <div class="overlay" style=" right: 0; width: 50%;">
+            <div class="text reveal fade-right">
+                <p>2025</p>
+                <h2><bold>Project Delta</bold></h2>
+                <p>"Embark on a legendary quest in 'Arthur's Resurgence.' Set in the age of King Arthur, wield Excalibur and rally knights to reclaim a fractured kingdom from darkness. Uncover secrets of the Round Table, forge alliances, and lead epic battles. Honor, glory, and destiny await in this immersive medieval adventure."</p>
+                <p><a href="ComingSoon.html"><strong>View Project</strong></a></p>
             </div>
-        </section>
-
-
-        <section class="row4">
-            <img src="img/selfie.jpg" alt="face" width="160" height="160" class="selfie">
-            <div class="row4_contents">
-                <p class="text-large">“In a virtual realm, imagination is the currency of innovation”</p>
-                <p>- CEO & Founder</p>
+        </div>
+    </section>
+    <section class="row4">
+        <img src="img/selfie.JPG" alt="face" width="160" height="160" class="selfie">
+        <div class="row4_contents">
+            <p class="text-large">“In a virtual realm, imagination is the currency of innovation”</p>
+            <p>- CEO & Founder</p>
+        </div>
+    </section>
+    <section class="section" style=" background-image: url('img/9.JPG');">
+        <div class="overlay" style="top: 50%; left: 50%; transform: translate(-50%, -50%); height: auto; justify-content: flex-start; width: 60%; ">
+            <div class="text" style="text-align:center;">
+                <h1>Asset Gallery</h1>
+                <p>This is an example of an image background with centered text positioned within a white opacity box.</p>
             </div>
-        </section>
-
-        <section class="section" style=" background: url('img/9.JPG') no-repeat center center fixed;">
-            <div class="overlay" style="top: 50%; left: 50%; transform: translate(-50%, -50%); height: auto; justify-content: flex-start; width: 60%; ">
-                <div class="text" style="text-align:center;">
-                    <h1>Asset Gallery</h1>
-                    <p>This is an example of an image background with centered text positioned within a white opacity box.</p>
-                </div>
+        </div>
+    </section>
+    <section class="section" style=" background-image: url('img/4.JPG');">
+        <div class="overlay" style="width: 100%; top: 0; left: 0; justify-content: center; text-align:center; padding:0;">
+            <div class="text" style="max-width: 80%;">
+                <h1>Development Experience</h1>
+                <p>A day in the shoes of one of our team here at AEden</p>
             </div>
-        </section>
-
-
-        <section class="section" style=" background: url('img/4.JPG') no-repeat center center fixed;">
-            <div class="overlay" style="width: 100%; top: 0; left: 0; justify-content: center; text-align:center; padding:0;">
-                <div class="text" style="max-width: 80%;">
-                    <h1>Development Experience</h1>
-                    <p>A day in the shoes of one of our team here at AEden</p>
+        </div>
+    </section>
+    <footer>
+        <div class="container" width="100%">
+            <div class="row2">
+                <div class="col11">
+                    <a href="index.html"><img src="img/AEden2.png" alt="Logo" class="logo"></a>
                 </div>
-            </div>
-        </section>
-
-
-
-
-
-        <footer>
-            <div class="container" width="100%">
-                <div class="row2">
-                    <div class="col11">
-                        <a href="index.html"><img src="img/AEden2.png" alt="Logo" class="logo"></a>
-                    </div>
-                    <div class="col12">
-                        <div class="col12-contents">
-                            <a href="ComingSoon.html"><img src="img/FB-icon.png" alt="Facebook link" class="social-icon"></a>
-                            <a href="ComingSoon.html"><img src="img/TW-icon.png" alt="Twitter link" class="social-icon"></a>
-                            <a href="ComingSoon.html"><img src="img/IG-icon.png" alt="Instagram link" class="social-icon"></a>
-                            <a href="ComingSoon.html"><img src="img/PN-icon.png" alt="Pinterest link" class="social-icon"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row3">
-                    <div class="col20">
-                        <p><small>@copyright AEden</small></p>
+                <div class="col12">
+                    <div class="col12-contents">
+                        <a href="ComingSoon.html"><img src="img/FB-icon.png" alt="Facebook link" class="social-icon"></a>
+                        <a href="ComingSoon.html"><img src="img/TW-icon.png" alt="Twitter link" class="social-icon"></a>
+                        <a href="ComingSoon.html"><img src="img/IG-icon.png" alt="Instagram link" class="social-icon"></a>
+                        <a href="ComingSoon.html"><img src="img/PN-icon.png" alt="Pinterest link" class="social-icon"></a>
                     </div>
                 </div>
             </div>
-        </footer>
+            <div class="row3">
+                <div class="col20">
+                    <p><small>@copyright AEden</small></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </div>
 </body>
 </html>
